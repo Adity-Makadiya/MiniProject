@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Countries</string>
+    <string name="bgimg">bgImg</string>
+    <string name="welcome">Welcome</string>
+    <string name="login">Login</string>
+    <string name="sign_up">Sign up</string>
+    <string name="todo">TODO</string>
+    <string name="todo1">TODO1</string>
+    <string name="country_list">Country List</string>
+    <string name="your_list">Your List</string>
+</resources>

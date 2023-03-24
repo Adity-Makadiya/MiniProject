@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyRecyclerView2"
+    android:background="@drawable/bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/le1">
+
+        <Button
+            android:id="@+id/backbutton"
+            android:layout_width="59dp"
+            android:layout_height="50dp"
+            android:background="@color/black"
+            android:drawableLeft="@drawable/ic_baseline_arrow_back_24"
+            android:onClick="Reback"
+            android:paddingLeft="20dp"
+            android:paddingTop="2dp"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="284dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Your List"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+    </LinearLayout>
+
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+    android:paddingTop="35dp">
+
+        <TextView
+            android:id="@+id/cname_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="#fff"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="Country Name :" />
+
+        <EditText
+            android:id="@+id/Cname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/edit_text_bg"
+            android:layout_toRightOf="@+id/cname_label"
+            android:hint="Country"
+            android:textColor="@color/white"
+            android:padding="10dp"
+            android:textColorHint="@color/white" />
+
+        <TextView
+            android:id="@+id/about_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="#fff"
+            android:layout_below="@+id/cname_label"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="20dp"
+            android:text="Your Thought About Country: " />
+
+        <EditText
+            android:id="@+id/about"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/cname_label"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:padding="10dp"
+            android:layout_below="@id/Cname"
+            android:background="@drawable/edit_text_bg"
+            android:hint="Your Thought"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:layout_marginTop="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/about_label"
+            android:id="@+id/layout_btn"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:gravity="center"
+            android:layout_marginTop="40dp">
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.50"
+            android:background="@drawable/edit_text_bg"
+            android:text="Add"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</FrameLayout>
